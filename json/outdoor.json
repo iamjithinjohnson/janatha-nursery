@@ -1,0 +1,26 @@
+[
+    {
+        "id": "1",
+        "category": "outdoor plant",
+        "name": "monstera",
+        "price": 200,
+        "imgpath": "https://www.ikea.com/in/en/images/products/fejka-artificial-potted-plant-in-outdoor-monstera__0614197_PE686822_S5.JPG",
+        "info": "https://www.gardendesign.com/roses/care.html#:~:text=Rose%20care%20is%20easier%20than,to%20keep%20the%20soil%20moist."
+    },
+    {
+        "id": "2",
+        "category": "outdoor plant",
+        "name": "Fiberglass",
+        "price": 300,
+        "imgpath": "https://images-na.ssl-images-amazon.com/images/I/41ToupvTR%2BL.jpg",
+        "info": "https://www.apartmenttherapy.com/money-tree-plants-our-best-tips-for-growing-and-care-239893"
+    },
+    {
+        "id": "3",
+        "category": "outdoor plant",
+        "name": "Fiberglass",
+        "price": 300,
+        "imgpath": "https://images-na.ssl-images-amazon.com/images/I/41ToupvTR%2BL.jpg",
+        "info": "https://www.apartmenttherapy.com/money-tree-plants-our-best-tips-for-growing-and-care-239893"
+    }
+]

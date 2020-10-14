@@ -1,0 +1,50 @@
+[
+    {
+        "id": "101",
+        "category": "indoor plant",
+        "name": "lucky bamboo",
+        "price": 200,
+        "imgpath": "https://3.imimg.com/data3/KE/PR/MY-10774892/lucky-bamboo-tree-500x500.jpg",
+        "info": "https://www.gardendesign.com/roses/care.html#:~:text=Rose%20care%20is%20easier%20than,to%20keep%20the%20soil%20moist."
+    },
+    {
+        "id": "102",
+        "category": "indoor plant",
+        "name": "money plant",
+        "price": 300,
+        "imgpath": "https://images-na.ssl-images-amazon.com/images/I/41YlnnYriDL.jpg",
+        "info": "https://www.apartmenttherapy.com/money-tree-plants-our-best-tips-for-growing-and-care-239893"
+    },
+    {
+        "id": "103",
+        "category": "indoor plant",
+        "name": "monstera",
+        "price": 220,
+        "imgpath": "https://www.gardeningknowhow.com/wp-content/uploads/2014/03/cheese-plant.jpg",
+        "info": "https://www.apartmenttherapy.com/money-tree-plants-our-best-tips-for-growing-and-care-239893"
+    },
+    {
+        "id": "104",
+        "category": "indoor plant",
+        "name": "zamiokulkas",
+        "price": 220,
+        "imgpath": "https://i.pinimg.com/originals/12/33/4a/12334a37985ef86b126c600945b0b01e.jpg",
+        "info": "https://www.apartmenttherapy.com/money-tree-plants-our-best-tips-for-growing-and-care-239893"
+    },
+    {
+        "id": "105",
+        "category": "indoor plant",
+        "name": "aavo",
+        "price": 110,
+        "imgpath": "https://1.bp.blogspot.com/-Hv7js6m4TB0/X4RyEIvVPXI/AAAAAAAAAmA/L7tdaPHrTzwsts9CBQhoJ8PyrnCU3acyACLcBGAsYHQ/s320/IMG20190611184723.jpg",
+        "info": "https://www.apartmenttherapy.com/money-tree-plants-our-best-tips-for-growing-and-care-239893"
+    },
+    {
+        "id": "106",
+        "category": "indoor plant",
+        "name": "chedi",
+        "price": 80,
+        "imgpath": "https://1.bp.blogspot.com/-uGdhEJsGhak/X4R0tk2pLpI/AAAAAAAAAmc/TKiL464F0GwS32mlYp6hrljrIY1BZNnwQCLcBGAsYHQ/s320/IMG20190610172920.jpg",
+        "info": "https://www.apartmenttherapy.com/money-tree-plants-our-best-tips-for-growing-and-care-239893"
+    }
+]

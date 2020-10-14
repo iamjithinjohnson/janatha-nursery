@@ -3,9 +3,9 @@
 class Data {
 
   //jsonfile indoor plant
-  static const jsonindoor = 'https://raw.githubusercontent.com/iamjithinjohnson/flutter/master/janathaApp/json/indoor.json';
+  static const jsonindoor = 'https://raw.githubusercontent.com/iamjithinjohnson/janatha-nursery/master/json/indoor.json';
 //jsonfile outdoorplant
-static const jsonoutdoor = 'https://raw.githubusercontent.com/iamjithinjohnson/flutter/master/janathaApp/json/outdoor.json';
+static const jsonoutdoor = 'https://raw.githubusercontent.com/iamjithinjohnson/janatha-nursery/master/json/outdoor.json';
 
 
   // janatha logo profile

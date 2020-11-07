@@ -18,14 +18,11 @@ class Productview extends StatelessWidget {
     return Scaffold(
       backgroundColor: Colors.grey[100],
       body: SafeArea(
-
-
-          child: GridView.builder(            
+          child: GridView.builder(
         itemCount: janathadata.length,
-
         gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-            crossAxisCount: 2,),
-        
+          crossAxisCount: 2,
+        ),
         itemBuilder: (BuildContext context, int index) {
           return GestureDetector(
               onTap: () {

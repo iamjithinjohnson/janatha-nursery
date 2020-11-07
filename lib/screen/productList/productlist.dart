@@ -1,8 +1,5 @@
 import 'dart:convert';
 import 'package:janathanursery/screen/productList/customappbar.dart';
-import 'package:janathanursery/screen/showalldetails/showAllDetails.dart';
-import 'package:janathanursery/screen/verticalproductview/productview.dart';
-import 'package:transparent_image/transparent_image.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
@@ -10,13 +7,7 @@ import 'package:janathanursery/data/data.dart';
 import 'package:janathanursery/screen/profile/profile.dart';
 import 'package:janathanursery/theme/theme.dart';
 import 'package:http/http.dart' as http;
-import '../../customfetchserver.dart';
-import './contendata.dart';
-import 'package:janathanursery/constant.dart';
-
-enum PageEnum {
-  firstPage,
-}
+import 'customfetchserver.dart';
 
 class ProductList extends StatefulWidget {
   @override
@@ -155,7 +146,6 @@ class _ProductListState extends State<ProductList>
                   onpressdrawer: () => _scaffoldKey.currentState.openDrawer(),
                 ),
                 textfield(),
-
                 Padding(
                   padding: const EdgeInsets.only(top: 25),
                   child: tabBarItem,
@@ -173,114 +163,6 @@ class _ProductListState extends State<ProductList>
                     ],
                   ),
                 ),
-                //text('Recently Added'),
-                //line(),
-                //recentlyAdded(context, janathaData),
-                // FutureBuilder(
-                //   future: fetchFromServer(_urrll),
-                //   builder: (BuildContext context, AsyncSnapshot snapshot) {
-                //     if (snapshot.hasError) {
-                //       // if there is no connection
-                //       return Padding(
-                //         padding: const EdgeInsets.only(top: 10),
-                //         child: Column(
-                //           children: <Widget>[
-                //             Row(
-                //               mainAxisAlignment: MainAxisAlignment.center,
-                //               children: <Widget>[
-                //                 Text(
-                //                   'no internet',
-                //                   style: TextStyle(
-                //                       color: Colors.blueGrey,
-                //                       fontWeight: FontWeight.bold,
-                //                       fontSize: 26),
-                //                 ),
-                //                 Icon(
-                //                   Icons
-                //                       .signal_cellular_connected_no_internet_4_bar,
-                //                   color: Colors.blueGrey,
-                //                 ),
-                //               ],
-                //             ),
-                //             Padding(
-                //               padding: const EdgeInsets.only(top: 50),
-                //               //refreh button
-                //               child: IconButton(
-                //                 icon: Icon(Icons.refresh),
-                //                 color: Colors.blueGrey,
-                //                 onPressed: () =>
-                //                     setState(() {}), // simply refresh
-                //                 iconSize: 60,
-                //               ),
-                //             ),
-                //             Text(
-                //               'refresh',
-                //               style: TextStyle(color: Colors.blueGrey),
-                //             )
-                //           ],
-                //         ),
-                //       );
-                //     }
-                //     return snapshot.connectionState == ConnectionState.waiting
-                //         ? Center(
-                //             // connection waiting
-                //             heightFactor: 5,
-                //             child: CircularProgressIndicator(),
-                //           )
-                //         : Column(
-                //             children: <Widget>[
-                //               FlatButton(
-                //                 onPressed: () =>
-                //                     _sendDataToProductviewScreen(context),
-                //                 child: Text(
-                //                   'view all',
-                //                   style: TextStyle(
-                //                     color: kPrimaryColor,
-                //                     fontSize: 18,
-                //                   ),
-                //                 ),
-                //               ),
-                //               Container(
-                //                 // connection done
-                //                 padding: const EdgeInsets.only(top: 10),
-                //                 width: MediaQuery.of(context).size.width,
-                //                 height:
-                //                     MediaQuery.of(context).size.height * 0.48,
-                //                 child: ListView.builder(
-                //                     // shrinkWrap: true,
-                //                     //physics: NeverScrollableScrollPhysics(),
-                //                     scrollDirection: Axis.horizontal,
-                //                     itemCount: janathaData.length,
-                //                     itemBuilder:
-                //                         (BuildContext context, int index) {
-                //                       return GestureDetector(
-                //                           onTap: () {
-                //                             Map map = {
-                //                               'image':
-                //                                   janathaData[index].imgpath,
-                //                               'name': janathaData[index].name,
-                //                               'price': janathaData[index]
-                //                                   .price
-                //                                   .toString(),
-                //                               'showNo': janathaData[index].id
-                //                             };
-                //                             Navigator.of(context).pushNamed(
-                //                                 ShowAllDetails.routeName,
-                //                                 arguments: map);
-                //                           },
-                //                           child: ContentData(
-                //                             id: janathaData[index].id,
-                //                             name: janathaData[index].name,
-                //                             image: janathaData[index].imgpath,
-                //                             price: janathaData[index].price,
-                //                             info: janathaData[index].info,
-                //                           ));
-                //                     }),
-                //               ),
-                //             ],
-                //           );
-                //   },
-                // ),
               ],
             ),
           ),
@@ -343,49 +225,27 @@ class _ProductListState extends State<ProductList>
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(10),
           boxShadow: [
-            BoxShadow(
-              color: color_grey.withOpacity(0.50),
-              blurRadius: 5,
-            )
+            BoxShadow(color: color_grey.withOpacity(0.50), blurRadius: 5)
           ],
         ),
         child: TextField(
           autofocus: false,
-          style: TextStyle(
-            fontSize: 18,
-            fontWeight: FontWeight.bold,
-          ),
+          style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
           decoration: InputDecoration(
             hintText: 'Search',
             hintStyle: TextStyle(
-              fontSize: 16,
-              fontWeight: FontWeight.w500,
-              color: color_grey,
-            ),
+                fontSize: 16, fontWeight: FontWeight.w500, color: color_grey),
             border: OutlineInputBorder(
               borderRadius: BorderRadius.circular(10),
-              borderSide: BorderSide(
-                width: 0,
-                style: BorderStyle.none,
-              ),
+              borderSide: BorderSide(width: 0, style: BorderStyle.none),
             ),
             fillColor: Colors.white,
             filled: true,
-            contentPadding: EdgeInsets.symmetric(
-              vertical: 20,
-              horizontal: 24,
-            ),
+            contentPadding: EdgeInsets.symmetric(vertical: 20, horizontal: 24),
             suffixIcon: Padding(
-              padding: const EdgeInsets.only(
-                right: 15,
-                left: 8,
-              ),
+              padding: const EdgeInsets.only(right: 15, left: 8),
               child: IconButton(
-                icon: Icon(
-                  Icons.search,
-                  size: 24,
-                  color: color_grey,
-                ),
+                icon: Icon(Icons.search, size: 24, color: color_grey),
                 onPressed: () => null,
               ),
             ),

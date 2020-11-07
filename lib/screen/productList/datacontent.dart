@@ -24,7 +24,7 @@ class DataContent extends StatelessWidget {
       margin: EdgeInsets.all(5),
       decoration: BoxDecoration(
         color: Colors.white,
-        borderRadius: BorderRadius.circular(10),
+        borderRadius: BorderRadius.only(bottomLeft: Radius.circular(10),bottomRight: Radius.circular(10)),
       ),
       
       
@@ -39,7 +39,7 @@ class DataContent extends StatelessWidget {
             child: FadeInImage.memoryNetwork(
               // Plant image
               height: size.height*0.2,
-              width: size.width/3,
+              width: size.width/2,
 
               fit: BoxFit.cover,
               placeholder: kTransparentImage,
